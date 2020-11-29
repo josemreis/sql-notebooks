@@ -1,3 +1,15 @@
+-- create database
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'uni')
+	BEGIN
+		CREATE DATABASE uni 
+	END;
+	GO
+
+-- switch to the uni database
+USE uni;
+GO
+
+-- add the relevant tables
 create table classroom
 	(building		varchar(15),
 	 room_number		varchar(7),

@@ -1,3 +1,8 @@
+-- switch to the relevant database
+USE uni;
+GO
+
+-- add the data
 delete from prereq;
 delete from time_slot;
 delete from advisor;
